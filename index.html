@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <title>Digifist - test</title>
+</head>
+<body>
+    <section>
+        <div class="wrapper">
+            <figure class="jumbotron">
+                <img src="img/jumbotron.jpg" alt="">
+            </figure>
+            <article>
+                <div class="collection_heading">
+                    <h1 class="section_title">Everyday items, we have something to suit every occasion.</h1>
+                    <p class="section_description">At suspendisse augue lectus arcu, accumsan ut sit posuere vitae sit tincidunt semper eu proin leo gravida cursus.</p>
+                    <a href="#" class="section_link">Shop all everyday items</a>
+                </div>
+                <div class="collection_slick_container">
+                <button class='collection_next_btn slick-next'><img src='img/arrow.png' alt=''></button>
+                <button class='collection_prev_btn slick-prev'><img src='img/arrow.png' alt=''></button>            
+                <div class="collection_items_slick">
+                    <div>
+                        <img src="img/green.jpg" alt="">
+                        <h3 class="product_title">365 Signature Hoodie</h3>
+                        <div class="product_info">
+                            <span class="product_price">€33.95</span>
+                            <div class="color_switch">
+                                <div class="color_variant color_variant_gray color_active"><p></p></div>
+                                <div class="color_variant color_variant_pink"><p></p></div>
+                                <div class="color_variant color_variant_purple"><p></p></div>
+                                <div class="color_variant color_variant_green"><p></p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/beige.jpg" alt="">
+                        <h3 class="product_title">365 Signature Hoodie</h3>
+                        <div class="product_info">
+                            <span class="product_price">€33.95</span>
+                            <div class="color_switch">
+                                <div class="color_variant color_variant_gray color_active"><p></p></div>
+                                <div class="color_variant color_variant_pink"><p></p></div>
+                                <div class="color_variant color_variant_purple"><p></p></div>
+                                <div class="color_variant color_variant_green"><p></p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/blue.jpg" alt="">
+                        <h3 class="product_title">365 Signature Hoodie</h3>
+                        <div class="product_info">
+                            <span class="product_price">€33.95</span>
+                            <div class="color_switch">
+                                <div class="color_variant color_variant_gray color_active"><p></p></div>
+                                <div class="color_variant color_variant_pink"><p></p></div>
+                                <div class="color_variant color_variant_purple"><p></p></div>
+                                <div class="color_variant color_variant_green"><p></p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+            </article>
+        </div>
+    </section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+       <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.collection_items_slick').slick({
+            infinite: false,
+            slidesToShow: 2.3,
+            slidesToScroll: 1,
+            nextArrow: $('.collection_next_btn'),
+            prevArrow: $('.collection_prev_btn'),
+             responsive: [
+                {
+                  breakpoint: 1439,
+                  settings: {
+                    slidesToShow: 2
+                  }
+                },
+                {
+                  breakpoint: 900,
+                  settings: {
+                    slidesToShow: 2.2
+                  }
+                },
+            ]
+        });
+        </script>
+</body>
+</html>

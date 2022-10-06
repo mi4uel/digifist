@@ -1,0 +1,244 @@
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/Avenir.ttc);
+}
+@font-face {
+  font-family: ITC Avant Garde Gothic Pro;
+  src: url(../fonts/ITCAvantGardePro-Md.otf);
+}
+@font-face {
+  font-family: ITC Avant Garde Gothic Pro Demi;
+  src: url(../fonts/ITCAvantGardePro-Demi.otf);
+}
+@font-face {
+  font-family: ITC Avant Garde Gothic Pro Bold;
+  src: url(../fonts/ITCAvantGardePro-Bold.otf);
+}
+@font-face {
+  font-family: ITC Avant Garde Gothic Pro Bk;
+  src: url(../fonts/ITCAvantGardePro-Bk.otf);
+}
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;}
+.wrapper{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+}
+.jumbotron{
+    width: 50%;
+}
+.jumbotron img{
+    width: 100%;
+}
+article{
+    padding: 96px 0px;
+    width: 50%;
+}
+.collection_heading{
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.section_title{
+    font-family: 'ITC Avant Garde Gothic Pro Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 130%;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+}
+.section_description{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #666666;
+    margin-top: 12px;
+}
+.section_link{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12.8px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #000000;
+    margin-top: 32px;
+    padding-bottom: 5px;
+text-decoration: none;
+    border-bottom: 1px solid black;
+}
+.collection_items_slick{
+    padding-left: 120px;
+    margin-top: 68px;
+}
+.collection_items_slick img{
+    width: 230px;
+    height: 310px;
+}
+
+.product_title{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 160%;
+    color: #000000;
+    margin-top:12px
+}
+.product_price{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12.8px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+.color_switch, .product_info{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.product_info{
+    justify-content: space-between;
+    max-width: 230px;
+    margin-top: 4px;
+}
+.collection_slick_container{
+    position: relative;
+}
+.collection_slick_container .slick-prev {
+    left: 130px;
+    border:1px solid rgba(0, 0, 0, 0.1);
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+.collection_slick_container .slick-prev img {
+    transform: rotate(180deg);
+}
+.collection_slick_container .slick-prev:before, .collection_slick_container .slick-next:before{
+    content:unset;
+    display: none;
+    opacity: 0;
+}
+.collection_slick_container .slick-next {
+    right: 10px;
+    border:1px solid rgba(0, 0, 0, 0.1);
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+.collection_slick_container .slick-disabled{
+    display: none !important;
+}
+.color_variant {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.color_variant p{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.color_variant_gray p{
+    background-color: #99C3CC;
+}
+.color_variant_pink p{
+    background-color: #CC9999;
+}
+.color_variant_purple p{
+    background-color: #CB99CC;
+}
+.color_variant_green p{
+    background-color: #BCD9B2;
+}
+.color_active{
+    border: 1px solid black;
+}
+.color_active p{
+    width: 90%;
+    height: 90%;
+}
+@media screen and (max-width: 1439px) {
+    .collection_items_slick, .collection_heading{
+    padding-left: 30px;
+}
+.collection_slick_container .slick-prev {
+    left: 40px;
+}
+}
+@media screen and (max-width: 1024px) {
+    .wrapper{
+        flex-direction: column;
+    }
+    .jumbotron{
+        width: 100%;
+    }
+    article{
+        padding: 0;
+        width: 100%;
+        margin-top: -10%;
+        padding-bottom: 65px;
+    }
+    .collection_heading{
+        padding: 0px 24px;
+    }
+    .section_title{
+        font-size: 20px;
+        color: #fff;
+    }
+    .section_description{
+        display: none;
+    }
+    .section_link{
+        color: #fff;
+        border-color: #fff;
+        margin-top: 16px;
+    }
+    .collection_items_slick{
+        padding-left: 24px;
+        margin-top: 38px;
+    }
+    .collection_items_slick img{
+        width: 148px;
+        height: 200px;
+    }
+    .product_info{
+        flex-direction: column;
+        align-items:flex-start
+    }
+    .collection_slick_container .slick-prev, .collection_slick_container .slick-next{
+        display: none !important;
+    }
+}
+@media screen and (max-width: 700px){
+    article{
+        margin-top: -23%;
+    }
+}
+
+@media screen and (max-width: 491px){
+    article{
+        margin-top: -53%;
+    }
+}
